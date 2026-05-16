@@ -7,10 +7,12 @@ import { signInWithGoogle } from "@/src/lib/firebase";
 export function LandingPage() {
   const handleStart = async () => {
     try {
-      await signInWithGoogle();
-      window.location.href = "/home";
+      const user = await signInWithGoogle();
+      if (user) {
+        window.location.href = "/home";
+      }
     } catch (e) {
-      console.error(e);
+      console.error("Login failed:", e);
     }
   };
 
