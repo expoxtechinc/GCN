@@ -1,0 +1,11 @@
+{
+  "name": "Global Connectivity Network (GCN)",
+  "description": "A futuristic, AI-powered global social media ecosystem for connection, messaging, streaming, and community building.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
